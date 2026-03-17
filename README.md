@@ -46,9 +46,11 @@ Configuration
 Open BulkEmails.py and edit the configuration section at the top:
 python
 SMTP_SERVER = "smtp.gmail.com"
+
 SMTP_PORT = 587
 
 SENDER_EMAIL = "YourEmail@gmail.com"
+
 SENDER_PASSWORD = "abcd efgh ijkl mnop"  # Gmail App Password
 
 SUBJECT = "Title of the email"
@@ -58,8 +60,11 @@ Body of the email
 """
 
 ATTACHMENT_PATH = "Attachment.pdf"  # File you want to attach
+
 RECIPIENTS_FILE = "Example.txt"     # Text file with one email per line
+
 Explanation of the main settings:
+
 •	SENDER_EMAIL: Your Gmail address that will send the emails.
 •	SENDER_PASSWORD: The Gmail App Password (do not share this with anyone).
 •	SUBJECT: Subject line of your email.

@@ -66,11 +66,17 @@ RECIPIENTS_FILE = "Example.txt"     # Text file with one email per line
 Explanation of the main settings:
 
 •	SENDER_EMAIL: Your Gmail address that will send the emails.
+
 •	SENDER_PASSWORD: The Gmail App Password (do not share this with anyone).
+
 •	SUBJECT: Subject line of your email.
+
 •	BODY: The body text of the email.
+
 •	ATTACHMENT_PATH: Path to the file to attach. If the file does not exist, the script shows a warning and sends the email without an attachment.
+
 •	RECIPIENTS_FILE: Path to a text file that contains the recipient email addresses, one per line.
+
 Example Example.txt:
 text
 user1@example.com

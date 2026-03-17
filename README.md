@@ -85,9 +85,13 @@ user3@example.com
 ________________________________________
 Usage
 1.	Set SENDER_EMAIL and SENDER_PASSWORD in BulkEmails.py.
+   
 2.	Edit SUBJECT and BODY with the email content you want to send.
+   
 3.	Prepare your recipients file (e.g., Example.txt) with one email per line.
+
 4.	Place your attachment file in the project folder and set ATTACHMENT_PATH to its name (or full path).
+
 5.	Run the script:
 bash
 python BulkEmails.py

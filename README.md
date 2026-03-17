@@ -78,9 +78,13 @@ Explanation of the main settings:
 •	RECIPIENTS_FILE: Path to a text file that contains the recipient email addresses, one per line.
 
 Example Example.txt:
+
 text
+
 user1@example.com
+
 user2@example.com
+
 user3@example.com
 ________________________________________
 Usage

@@ -97,25 +97,43 @@ Usage
 4.	Place your attachment file in the project folder and set ATTACHMENT_PATH to its name (or full path).
 
 5.	Run the script:
+   
 bash
+
 python BulkEmails.py
+
 What happens when you run it:
+
+
 •	The script loads all recipients from RECIPIENTS_FILE.
+
 •	It connects to Gmail’s SMTP server using TLS and logs in with your sender account.
+
 •	It sends the email (and attachment, if present) to each recipient individually.
+
 •	It prints progress messages like Sending... 1/10 To user@example.com....
+
 •	It waits a short time between each email and prints a final success or error message.
+
 ________________________________________
 Attachments
+
 By default, the script is configured to attach a PDF file (e.g., Attachment.pdf). If the attachment file is missing, the script warns you and sends the emails without any attachment.
+
 You can point ATTACHMENT_PATH to any file you want, but for full compatibility with different file types you may need to adjust the code to set the correct MIME type.
 ________________________________________
 Security Notes
 •	Do not commit your real SENDER_EMAIL or SENDER_PASSWORD to a public repository.
+
 •	Treat the App Password like a real password: never share it, and revoke it if you suspect it has been exposed.
+
 •	For production use, consider loading credentials from environment variables or a separate, ignored config file instead of hard-coding them.
+
 ________________________________________
 Example Use Cases
 •	Sending announcements or newsletters to a small mailing list.
+
 •	Emailing all students in a class.
+
 •	Notifying colleagues or clients with a standard message and attachment.
+

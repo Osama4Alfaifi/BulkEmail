@@ -79,8 +79,6 @@ Explanation of the main settings:
 
 Example Example.txt:
 
-text
-
 user1@example.com
 
 user2@example.com
